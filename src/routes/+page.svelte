@@ -7,25 +7,30 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CenteredTextOnlyHero
+	title="Keep every team on the same page"
+	subtitle="Sentra shows you where alignment is slipping—so you can fix it before it costs you time, morale, or money."
+	imageSrc="/generated/image-a-cozy-cafe-scene-with-customers-enjoyin.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by growing organizations"
+	logoUrls={[
+		'https://logo.clearbit.com/stripe.com',
+		'https://logo.clearbit.com/notion.so',
+		'https://logo.clearbit.com/slack.com',
+		'https://logo.clearbit.com/zoom.us'
+	]}
+/>
 
 <Summary
-	generating
 	title="What we do"
 	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
 			name: "Jane Smith",
@@ -58,7 +63,6 @@
 />
 
 <Features
-	generating
 	title="Features"
 	subtitle="Some features"
 	features={[
@@ -81,7 +85,6 @@
 />
 
 <UseCases
-	generating
 	title="Use Cases"
 	subtitle="Real-world applications for your business needs"
 	useCases={[
@@ -121,5 +124,5 @@
 	]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction />
