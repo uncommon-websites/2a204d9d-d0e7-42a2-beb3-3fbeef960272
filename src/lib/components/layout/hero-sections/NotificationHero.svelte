@@ -74,27 +74,48 @@ Shows real-time organizational insights that Sentra would detect.
 					{subtitle}
 				</p>
 
-				<!-- Notification Component -->
-				<div 
-					class="bg-card border-border mx-auto w-full max-w-md rounded-xl border p-6 shadow-lg transition-all duration-500 ease-in-out"
-					data-enter
-				>
-					<div class="flex items-start gap-3">
-						<div class="text-2xl" role="img" aria-label="Alert icon">
-							{currentNotification.emoji}
-						</div>
-						<div class="flex-1 space-y-1">
-							<div class="flex items-center justify-between">
-								<h3 class="text-foreground text-sm font-medium">
-									{currentNotification.title}
-								</h3>
-								<span class="text-muted-foreground text-xs">
-									{currentNotification.time}
-								</span>
+				<!-- Stacked Notification Components -->
+				<div class="relative mx-auto w-full max-w-md" data-enter>
+					{#each visibleNotifications as notificationIndex, stackIndex}
+						{@const notification = notifications[notificationIndex]}
+						<div 
+							class="notification-card bg-card border-border absolute inset-0 w-full rounded-xl border p-6 shadow-lg transition-all duration-700 ease-out"
+							style:transform="translateY({stackIndex * -8}px) translateX({stackIndex * 4}px) scale({1 - stackIndex * 0.05})"
+							style:z-index={10 - stackIndex}
+							style:opacity={1 - stackIndex * 0.3}
+							style:filter="blur({stackIndex * 0.5}px)"
+						>
+							<div class="flex items-start gap-3">
+								<div class="text-2xl" role="img" aria-label="Alert icon">
+									{notification.emoji}
+								</div>
+								<div class="flex-1 space-y-1">
+									<div class="flex items-center justify-between">
+										<h3 class="text-foreground text-sm font-medium">
+											{notification.title}
+										</h3>
+										<span class="text-muted-foreground text-xs">
+											{notification.time}
+										</span>
+									</div>
+									<p class="text-muted-foreground text-sm leading-relaxed">
+										{notification.description}
+									</p>
+								</div>
 							</div>
-							<p class="text-muted-foreground text-sm leading-relaxed">
-								{currentNotification.description}
-							</p>
+						</div>
+					{/each}
+					<!-- Spacer to maintain layout -->
+					<div class="invisible rounded-xl border p-6">
+						<div class="flex items-start gap-3">
+							<div class="text-2xl">🎯</div>
+							<div class="flex-1 space-y-1">
+								<div class="flex items-center justify-between">
+									<h3 class="text-sm font-medium">Goal drift detected</h3>
+									<span class="text-xs">3m ago</span>
+								</div>
+								<p class="text-sm leading-relaxed">Ops team priorities misaligned with OKRs for Q2</p>
+							</div>
 						</div>
 					</div>
 				</div>
