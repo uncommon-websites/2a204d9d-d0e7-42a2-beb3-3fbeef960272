@@ -27,102 +27,117 @@
 
 <Summary
 	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	text="Sentra is an AI teammate that continuously enhances organizational alignment by proactively identifying communication breakdowns before they impact productivity, morale, or finances. We help growing Series A+ companies keep every team on the same page through natural voice interactions and intelligent monitoring of organizational health."
 />
 
 <Testimonials
 	testimonials={[
 		{
-			name: "Jane Smith",
+			name: "Safiya Green",
 			position: "CTO",
-			company: "Tech Innovations",
+			company: "Zentrolytics",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
+				"Sentra flagged a misaligned initiative before we hired the wrong team. That single insight saved us months and nearly $200,000.",
 			image:
-				"https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-black-woman-executive-in-.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Jarek Molina",
+			position: "VP Operations",
+			company: "Fusebeam",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
+				"We've cut 9 hours of recurring meetings per week since implementing Sentra. It has more context than any one of us and shows up every time.",
 			image:
-				"https://images.unsplash.com/photo-1600603405959-6d623e92445c?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-latino-man-in-a-leadershi.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Emilie Takano",
+			position: "Head of Strategy",
+			company: "Dovetail Core",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
+				"Sentra picked up on overlaps between product and sales that were quietly derailing both teams. Catching it early changed our quarter.",
 			image:
-				"https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+				"/generated/image-a-professional-asian-woman-executive-in-.webp"
 		}
 	]}
 />
 
 <Features
-	title="Features"
-	subtitle="Some features"
+	title="Features designed for clarity, not surveillance"
+	subtitle="The first AI teammate that keeps your entire organization in sync, without added complexity"
 	features={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+			title: "System-wide awareness through trusted conversations",
+			description: "Sentra talks directly with individuals across the company, gathering insights you'd never catch in a dashboard. That means real visibility into how teams are doing—and where support is needed—without performance tracking or micromanagement."
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+			title: "Early alerts before misalignment turns into rework",
+			description: "Sentra spots tension, duplicated effort, or team drift before they lead to churned code, abandoned features, or low morale. Leaders gain the chance to act early instead of reacting late."
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+			title: "AI that's trustworthy by design",
+			description: "Built on a strict trust-first model, Sentra never monitors, logs keystrokes, or spies on productivity. Participation is always consent-based, data is aggregated, and patterns are surfaced to fix systems—not to single people out."
+		},
+		{
+			title: "Works with the tools your team already uses",
+			description: "Sentra integrates with systems like Slack, Jira, and Calendar to understand work as it happens. This context powers more accurate insights and ensures Sentra works as an extension of your current workflows—not a replacement."
+		},
+		{
+			title: "A living map of how your org really functions",
+			description: "Through ongoing conversations and consent-based integrations, Sentra maintains a dynamic, real-time snapshot of how people, teams, and goals connect. It's like having a second brain that understands company structure as it evolves."
+		},
+		{
+			title: "Multi-agent intelligence for complex team environments",
+			description: "Sentra doesn't rely on simple sentiment scores. It uses advanced models to triangulate issues accurately and tell you who's affected, what's causing friction, and where to focus—no guesswork required."
 		}
 	]}
 />
 
 <UseCases
 	title="Use Cases"
-	subtitle="Real-world applications for your business needs"
+	subtitle="Real-world applications for preventing misalignment"
 	useCases={[
 		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Catch cross-team conflicts before they spiral",
+			description: "When engineering builds features that sales never asked for, or product roadmaps shift without notifying design, Sentra spots the disconnect early. Leaders get alerts to realign teams before wasted work piles up.",
+			image: "/generated/image-a-group-of-executives-gathered-around-a-.webp",
 			link: {
-				href: "/use-cases/workflows",
+				href: "/use-cases/cross-team-alignment",
 				label: "Learn more"
 			}
 		},
 		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
+			title: "Scale team coordination without more meetings",
+			description: "Growing from 50 to 150+ people breaks informal communication. Sentra maintains awareness across expanding teams by talking to everyone regularly, surfacing patterns that would otherwise get lost in the growth.",
+			image: "/generated/image-engineering-team-members-collaborating-e.webp",
 			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
+				href: "/use-cases/scaling-coordination",
+				label: "Learn more"
 			}
 		},
 		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+			title: "Prevent strategy execution gaps",
+			description: "When leadership sets new priorities but teams continue old work, months pass before anyone notices. Sentra tracks how strategic shifts flow through the organization and flags when execution isn't matching intent.",
+			image: "/generated/image-a-diverse-leadership-team-gathered-aroun.webp",
 			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
+				href: "/use-cases/strategy-execution",
+				label: "Learn more"
 			}
 		}
 	]}
 />
 
 <AboutTeaser />
-<CallToAction />
+<CallToAction
+	title="Keep your company in sync. Automatically."
+	subtitle="Join the private beta"
+	description="Sentra is an AI teammate that talks to everyone, spots misalignment early, and alerts the right people before important things start to break."
+	imageSrc="/generated/image-a-cheerful-engineering-manager-dressed-i.webp"
+	callsToAction={[
+		{
+			href: "/contact",
+			label: "Request early access",
+			variant: "primary"
+		}
+	]}
+/>

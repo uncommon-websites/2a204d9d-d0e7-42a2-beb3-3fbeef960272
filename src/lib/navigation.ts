@@ -64,42 +64,29 @@ export const navigation: NavItem[] = [
 		showInFooter: true,
 		children: [
 			{
-				label: "Healthcare",
-				href: "/use-cases/healthcare",
-				image:
-					"https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=1920&auto=format&fit=crop",
-
+				label: "Cross-team alignment",
+				href: "/use-cases/cross-team-alignment",
+				image: "/generated/image-a-group-of-executives-gathered-around-a-.webp",
 				description:
-					"Innovative solutions for patient care, delivering advanced analytics to improve diagnostics, enhancing personalized treatment plans through real‑time data insights, and seamlessly integrating with existing healthcare systems to drive better outcomes and streamline clinical workflows",
+					"Catch cross-team conflicts before they spiral. When engineering builds features that sales never asked for, or product roadmaps shift without notifying design, Sentra spots the disconnect early and alerts leaders to realign teams before wasted work piles up.",
 				showInNav: true,
 				showInFooter: true
 			},
 			{
-				label: "Finance",
-				href: "/use-cases/finance",
-				image:
-					"https://images.unsplash.com/photo-1638913662180-afc4334cf422?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				label: "Scaling coordination",
+				href: "/use-cases/scaling-coordination",
+				image: "/generated/image-engineering-team-members-collaborating-e.webp",
 				description:
-					"Streamlining operations and compliance across financial services by automating regulatory reporting, strengthening risk management, integrating advanced real‑time analytics, and ensuring robust audit trails for enhanced governance and operational efficiency",
+					"Scale team coordination without more meetings. Growing from 50 to 150+ people breaks informal communication. Sentra maintains awareness across expanding teams by talking to everyone regularly, surfacing patterns that would otherwise get lost in the growth.",
 				showInNav: true,
 				showInFooter: true
 			},
 			{
-				label: "Technology",
-				href: "/use-cases/technology",
-				image:
-					"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+				label: "Strategy execution",
+				href: "/use-cases/strategy-execution",
+				image: "/generated/image-a-diverse-leadership-team-gathered-aroun.webp",
 				description:
-					"Cutting-edge tools for tech companies, offering scalable cloud-based platforms, AI-driven development frameworks, secure collaboration environments, and streamlined deployment pipelines to accelerate innovation and deliver market-leading solutions",
-				showInNav: true,
-				showInFooter: true
-			},
-			{
-				label: "Education",
-				href: "/use-cases/education",
-				image:
-					"https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description: "Enhancing learning experiences",
+					"Prevent strategy execution gaps. When leadership sets new priorities but teams continue old work, months pass before anyone notices. Sentra tracks how strategic shifts flow through the organization and flags when execution isn't matching intent.",
 				showInNav: true,
 				showInFooter: true
 			}

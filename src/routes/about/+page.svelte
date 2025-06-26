@@ -11,33 +11,32 @@
 	// Constants
 	const values = [
 		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
+			title: "Trust first",
+			description: "We build AI that respects humans, protects autonomy, and never surveils employees."
 		},
 		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
+			title: "Human-centric design",
+			description: "Technology should feel natural and enhance human connection, not replace it."
 		},
 		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
+			title: "Proactive alignment",
+			description: "We prevent misalignment before it becomes costly, focusing on systems over symptoms."
 		}
 	];
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+	title="Building trust through alignment"
+	subtitle="AI that brings teams together, not apart"
+	imageSrc="/generated/image-a-diverse-team-of-professionals-engaged-.webp"
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"Sentra started with a simple question: why do organizations that hire the best people and use the best tools still fall out of alignment? The more we spoke to teams—from fast-growing startups to well-established mid-size companies—the clearer it became. As companies scale, alignment breaks. Teams move quickly, but decisions get lost, context slips, and problems linger because no one sees the full picture. You're building fast, but not always together.",
+		"We soon realized the usual fixes weren't really fixes at all. More dashboards, more standups, more Slack threads—these only add noise. They turn communication into performance art and bury signals beneath reporting rituals. Every new tool becomes one more place to miss something important. The root problem isn't people—it's the system. When your organization outgrows the human capacity to track context and subtle cues, breakdowns are inevitable.",
+		"So we built Sentra—a trust-first AI teammate designed to keep teams connected in real time. Sentra talks with people across the company to surface weak signals early and guide small but critical interventions. It does this through natural conversations and familiar tools—not surveillance or clunky status updates. Alignment shouldn't require more meetings. It should just happen. And now, it can."
 	]}
 />
 
@@ -48,26 +47,26 @@
 <StakeholderGrid
 	stakeholderType="team"
 	title="Our team."
-	subtitle="Your partners in innovation."
+	subtitle="Building the future of organizational intelligence."
 	stakeholders={[
 		{
 			name: "Alex Morgan",
 			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
+			bio: "Passionate about creating AI that strengthens human connection and organizational trust.",
 			image:
 				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
 		},
 		{
 			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
+			position: "Head of AI Experience",
+			bio: "Designing conversational AI that feels human and builds trust through every interaction.",
 			image:
 				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
 		},
 		{
 			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
+			position: "Chief Technology Officer",
+			bio: "Building autonomous systems that understand organizations and prevent misalignment at scale.",
 			image:
 				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
 		}
@@ -77,26 +76,26 @@
 <StakeholderGrid
 	stakeholderType="investor"
 	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
+	subtitle="Leading investors in AI and future of work"
 	stakeholders={[
 		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
+			name: "Andreessen Horowitz",
+			image: "https://cdn.brandfetch.io/a16z.com/w/400/h/400/logo"
 		},
 		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
+			name: "Greylock Partners",
+			image: "https://cdn.brandfetch.io/greylock.com/w/400/h/400/logo"
 		},
 		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
+			name: "First Round Capital",
+			image: "https://cdn.brandfetch.io/firstround.com/w/400/h/400/logo"
 		}
 	]}
 />
 
 <!-- CTA Section -->
 <CallToAction
-	title="Ready to collaborate?"
-	subtitle="Let's create something amazing"
-	description="Join the companies already leveraging our expertise to transform their digital presence and achieve their business goals."
+	title="Ready to transform alignment?"
+	subtitle="Join our private beta"
+	description="Experience how Sentra helps Series A+ organizations reduce meeting time, prevent miscommunication, and build trust across teams."
 />

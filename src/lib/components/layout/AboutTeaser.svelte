@@ -21,10 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
+		name: "Jordan Mitchell",
 		role: "Founder & CEO",
-		image:
-			"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+		image: "/generated/image-a-professional-headshot-of-a-tech-founde.webp"
 	};
 </script>
 
@@ -33,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"Sentra was born from watching great teams break down—not from lack of talent, but from silent misalignment. I wanted to build software that could sense the disconnect early enough to save trust before it erodes."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
