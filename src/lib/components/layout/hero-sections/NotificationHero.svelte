@@ -53,7 +53,7 @@ Shows real-time organizational insights that Sentra would detect.
 		return () => clearInterval(interval);
 	});
 
-	$: currentNotification = notifications[currentNotificationIndex];
+	let currentNotification = $derived(notifications[currentNotificationIndex]);
 </script>
 
 <div class="bg-background grid h-[calc(100vh-var(--nav-height))] grid-rows-[1fr_auto]" {...rest}>
