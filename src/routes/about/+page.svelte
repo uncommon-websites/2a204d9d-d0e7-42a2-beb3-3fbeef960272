@@ -26,17 +26,29 @@
 </script>
 
 <SecondaryHero
+<<<<<<< HEAD
 	title="Building trust through alignment"
 	subtitle="AI that brings teams together, not apart"
 	imageSrc="/generated/image-a-diverse-team-of-professionals-engaged-.webp"
+=======
+	title="Stay aligned. Always."
+	subtitle="Sentra spots misalignment early so your team never spirals later"
+	imageSrc="/mockups/airport-screen-1750698878833.png"
+>>>>>>> 859b0bb4ffd6200ab54037bef2c34500974e76c6
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
+<<<<<<< HEAD
 		"Sentra started with a simple question: why do organizations that hire the best people and use the best tools still fall out of alignment? The more we spoke to teams—from fast-growing startups to well-established mid-size companies—the clearer it became. As companies scale, alignment breaks. Teams move quickly, but decisions get lost, context slips, and problems linger because no one sees the full picture. You're building fast, but not always together.",
 		"We soon realized the usual fixes weren't really fixes at all. More dashboards, more standups, more Slack threads—these only add noise. They turn communication into performance art and bury signals beneath reporting rituals. Every new tool becomes one more place to miss something important. The root problem isn't people—it's the system. When your organization outgrows the human capacity to track context and subtle cues, breakdowns are inevitable.",
 		"So we built Sentra—a trust-first AI teammate designed to keep teams connected in real time. Sentra talks with people across the company to surface weak signals early and guide small but critical interventions. It does this through natural conversations and familiar tools—not surveillance or clunky status updates. Alignment shouldn't require more meetings. It should just happen. And now, it can."
+=======
+		"We saw it happening everywhere: growing organizations struggling with misalignment that was costing them millions. Conflicting priorities, duplicated effort, canceled projects no one knew about, teams building deprecated features. The pain was real, but the solutions weren't working.",
+		"Every company's response was the same—add more meetings, create more dashboards, install more surveillance tools. But these 'fixes' were making things worse, not better. They created silos, encouraged performative reporting, and eroded the trust that real alignment requires.",
+		"That's when we realized the world needed something fundamentally different: an AI teammate that continuously senses organizational misalignment and alerts leaders before problems spiral. Not through surveillance, but through trust. Not with dashboards, but with voice. Sentra is what we built—the first autonomous organizational intelligence that keeps everyone moving together."
+>>>>>>> 859b0bb4ffd6200ab54037bef2c34500974e76c6
 	]}
 />
 
