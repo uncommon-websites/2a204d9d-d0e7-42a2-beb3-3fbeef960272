@@ -84,11 +84,11 @@ Shows real-time organizational insights that Sentra would detect.
 				</p>
 
 				<!-- Stacked Notification Components -->
-				<div class="relative mx-auto w-full max-w-md" data-enter>
+				<div class="relative mx-auto w-full max-w-md h-32" data-enter>
 					{#each visibleNotifications as notificationIndex, stackIndex}
 						{@const notification = notifications[notificationIndex]}
 						<div 
-							class="notification-card bg-card border-border absolute inset-0 w-full rounded-xl border p-6 shadow-lg transition-all duration-700 ease-out"
+							class="notification-card bg-card border-border absolute top-0 left-0 w-full rounded-xl border p-6 shadow-lg transition-all duration-700 ease-out"
 							style:transform="translateY({stackIndex * -8}px) translateX({stackIndex * 4}px) scale({1 - stackIndex * 0.05})"
 							style:z-index={10 - stackIndex}
 							style:opacity={1 - stackIndex * 0.3}
@@ -114,19 +114,6 @@ Shows real-time organizational insights that Sentra would detect.
 							</div>
 						</div>
 					{/each}
-					<!-- Spacer to maintain layout -->
-					<div class="invisible rounded-xl border p-6">
-						<div class="flex items-start gap-3">
-							<div class="text-2xl">🎯</div>
-							<div class="flex-1 space-y-1">
-								<div class="flex items-center justify-between">
-									<h3 class="text-sm font-medium">Goal drift detected</h3>
-									<span class="text-xs">3m ago</span>
-								</div>
-								<p class="text-sm leading-relaxed">Ops team priorities misaligned with OKRs for Q2</p>
-							</div>
-						</div>
-					</div>
 				</div>
 
 				<!-- Progress dots -->
