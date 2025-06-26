@@ -7,13 +7,12 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
+	import NotificationHero from "$lib/components/layout/hero-sections/NotificationHero.svelte";
 </script>
 
-<CenteredTextOnlyHero
+<NotificationHero
 	title="Keep every team on the same page"
 	subtitle="Sentra shows you where alignment is slipping—so you can fix it before it costs you time, morale, or money."
-	imageSrc="/generated/image-a-cozy-cafe-scene-with-customers-enjoyin.webp"
 />
 <LogoScroller 
 	label="Trusted by growing organizations"
