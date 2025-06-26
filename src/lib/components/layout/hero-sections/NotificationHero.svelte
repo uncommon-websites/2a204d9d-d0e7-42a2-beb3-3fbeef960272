@@ -54,6 +54,15 @@ Shows real-time organizational insights that Sentra would detect.
 	});
 
 	let currentNotification = $derived(notifications[currentNotificationIndex]);
+	
+	// Create visible notifications for stacking effect (current + next 2)
+	let visibleNotifications = $derived(() => {
+		const visible = [];
+		for (let i = 0; i < 3; i++) {
+			visible.push((currentNotificationIndex + i) % notifications.length);
+		}
+		return visible;
+	});
 </script>
 
 <div class="bg-background grid h-[calc(100vh-var(--nav-height))] grid-rows-[1fr_auto]" {...rest}>
