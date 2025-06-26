@@ -84,15 +84,15 @@ Shows real-time organizational insights that Sentra would detect.
 				</p>
 
 				<!-- Stacked Notification Components -->
-				<div class="relative mx-auto w-full max-w-md" data-enter>
+				<div class="relative mx-auto w-full max-w-md h-32" data-enter>
 					{#each visibleNotifications as notificationIndex, stackIndex}
 						{@const notification = notifications[notificationIndex]}
+						{@const isTop = stackIndex === 0}
 						<div 
-							class="notification-card bg-card border-border absolute inset-0 w-full rounded-xl border p-6 shadow-lg transition-all duration-700 ease-out"
-							style:transform="translateY({stackIndex * -8}px) translateX({stackIndex * 4}px) scale({1 - stackIndex * 0.05})"
+							class="notification-card bg-card border-border absolute w-full rounded-xl border p-6 shadow-lg transition-all duration-500 ease-out"
+							style:transform="translateY({stackIndex * 12}px) scale({1 - stackIndex * 0.08})"
 							style:z-index={10 - stackIndex}
-							style:opacity={1 - stackIndex * 0.3}
-							style:filter="blur({stackIndex * 0.5}px)"
+							style:opacity={isTop ? 1 : 0.6 - stackIndex * 0.2}
 						>
 							<div class="flex items-start gap-3">
 								<div class="text-2xl" role="img" aria-label="Alert icon">
@@ -113,30 +113,6 @@ Shows real-time organizational insights that Sentra would detect.
 								</div>
 							</div>
 						</div>
-					{/each}
-					<!-- Spacer to maintain layout -->
-					<div class="invisible rounded-xl border p-6">
-						<div class="flex items-start gap-3">
-							<div class="text-2xl">🎯</div>
-							<div class="flex-1 space-y-1">
-								<div class="flex items-center justify-between">
-									<h3 class="text-sm font-medium">Goal drift detected</h3>
-									<span class="text-xs">3m ago</span>
-								</div>
-								<p class="text-sm leading-relaxed">Ops team priorities misaligned with OKRs for Q2</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Progress dots -->
-				<div class="flex gap-2" data-enter>
-					{#each notifications as _, index}
-						<div 
-							class="h-2 w-2 rounded-full transition-all duration-300"
-							class:bg-primary={index === currentNotificationIndex}
-							class:bg-muted={index !== currentNotificationIndex}
-						></div>
 					{/each}
 				</div>
 			</div>
